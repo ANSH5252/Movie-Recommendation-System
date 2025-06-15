@@ -3,6 +3,7 @@
 This is a content based movie recommendation system. It recommends the movies based on it's similarity with the other movies in the database. 
 Example - Netflix uses Movie Recommendation system to recommend movies to their users based on the type of movie they watch.
 Machine Learning is used build this recommendation system. It includes several steps which are listed below :-<br>
+<br>
 STEP-1 : Loading the data into a Pandas Dataframe.<br>
 STEP-2 : Data preprocessing.<br>
 STEP-3 : Model Building to recommend movies.<br>
@@ -14,6 +15,7 @@ The data is loaded into a Pandas Dataframe from a CSV file. There are two CSV fi
 
 ## Step 2: Data Preprocessing 
 Since, there are 23 columns in total we need to filter out only those features which are important for the building of a recommendation system. Taking a look at the data we can point out the features required for our recommendation system which are listed as follows :-<br>
+<br>
 1 -> genres (Important because it helps to recommend similar content)<br>
 2 -> id (Important for fetching the posters of the movies)<br>
 3 -> keywaords (Important to generate tags which results in better recommendation)<br>
