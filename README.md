@@ -29,5 +29,12 @@ Now the new Dataframe consists of 7 columns. The next step is to create a Datafr
 ### Cleaning of Genres Feature<br>
 The genre feature consists of list of dictionaries and has the genres as string. Therefore, we need to extract it in the form of list for which the ast module of python is quite helpful. The ast module consists of literal_eval method which can be used to safely evaluate a string containing a Python literal structure. It's main purpose is to safely evaluate strings containing Python literals or containers of Python literals. After which the dataframe is updated with the new genres feature.<br>
 ### Cleaning of Keywords Feature<br>
+The keywords feature was cleaned using the same approach as the genres feature.<br>
+### Cleaning of Cast Feature<br>
+The cast feature was cleaned using the same feature and only the top 3 actors/actresses were kept for each movie to select from.<br>
+### Cleaning of Crew Feature<br>
+The crew feature was cleaned and the Director name was fetched from the crew and stored successfully in the Crew column in the form of list.<br>
+### Cleaning of Overview Feature<br>
+
 
 The system uses the concept of cosine similarity to find the similarity between the movies.
