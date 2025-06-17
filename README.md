@@ -41,9 +41,15 @@ The Final Dataframe consists of only 3 columns with the id , title and tags. The
 ### Modification of Tags Feature<br>
 The tags feature was modified to make it suitable for the recommendation system. The tags feature was converted into a list of strings and then the list was converted into a string. This was done to make it suitable for the recommendation system.<br>
 ## Preprocessing Of Textual Data Using NLP<br>
-There were certain words which were having the same meaning but were assigned different vectors , e.g. "love" , "loving" and "lovable". All these come under a single tag but were assigned different vectors. Therefore, we need to convert all these words into a single word. This can be done using the NLP library of python. The NLP library , nltk of python contains a class called PorterStemmer which can be used to convert all the words having same meaning into a single word.<br>
+There were certain words which were having the same meaning but were assigned different vectors , e.g. "love" , "loving" and "lovable". All these come under a single tag but were assigned different vectors. Therefore, we need to convert all these words into a single word. This can be done using the NLP library of python. The NLP library , nltk of python contains a class called PorterStemmer which can be used to convert all the words having same meaning into a single word. This is called Stemming of Data.<br>
 ## BAG OF WORDS Method For Encoding of Textual Data <br>
 CountVectorizer is a class from the sklearn library which can be used to convert the textual data into numerical data. It uses the BAG OF WORDS method for encoding of textual data. Using CountVectorizer we have passed two parameters , i.e. , max_features and stop_words. The max_features parameter was set as 5000 and the stop_words parameter was set as english. This was done to reduce the dimensionality of the data and to remove the stop words from the data.<br>
+<br>
+Now, each and every movies is represented as a vector of size 5000. This vector can be used to calculate the similarity of a particular movie with the other movies. More the distance between the two vectors , less is the similarity of this movie with that movie and vice-versa. To calculate the distance between two movies we will use the cosine similarity between the two vectors. The cosine similarity is calculated using the formula :- <br>
+cosine_similarity = (A.B) / (|A| |B|) where both A and B are the vectors <br>
+<br>
 
+## COSINE SIMILARITY<br>
+The entire vectors data was passed as a parameter to the cosine_similarity class which calculates the similarity of each movie with the rest 4806 movies. Thus, the shape of the similarity becomes 4806 x 4806.<br>
 
-The system uses the concept of cosine similarity to find the similarity between the movies.
+After calculation of the distances between movies , sorting them in reverse order and fetching the first five movies would give the top 5 movies which are similar to the movie which we currently selected. But the problem is that while sorting the movies according to their distances , the index of the movie is lost. Therefore, to retain the index , we need to use the enumerate function.<br>
