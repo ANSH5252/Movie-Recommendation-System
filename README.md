@@ -38,5 +38,8 @@ The crew feature was cleaned and the Director name was fetched from the crew and
 The overview feature was converted into a list to perform furthur operations.<br>
 ## Final Dataframe<br>
 The Final Dataframe consists of only 3 columns with the id , title and tags. The tags column is a mixture of the columns overview , generes , cast and crew. <br>
+### Modification of Tags Feature<br>
+The tags feature was modified to make it suitable for the recommendation system. The tags feature was converted into a list of strings and then the list was converted into a string. This was done to make it suitable for the recommendation system.<br>
+
 
 The system uses the concept of cosine similarity to find the similarity between the movies.
