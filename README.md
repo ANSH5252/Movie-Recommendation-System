@@ -40,6 +40,8 @@ The overview feature was converted into a list to perform furthur operations.<br
 The Final Dataframe consists of only 3 columns with the id , title and tags. The tags column is a mixture of the columns overview , generes , cast and crew. <br>
 ### Modification of Tags Feature<br>
 The tags feature was modified to make it suitable for the recommendation system. The tags feature was converted into a list of strings and then the list was converted into a string. This was done to make it suitable for the recommendation system.<br>
+## Preprocessing Of Textual Data Using NLP<br>
+There were certain words which were having the same meaning but were assigned different vectors , e.g. "love" , "loving" and "lovable". All these come under a single tag but were assigned different vectors. Therefore, we need to convert all these words into a single word. This can be done using the NLP library of python. The NLP library , nltk of python contains a class called PorterStemmer which can be used to convert all the words having same meaning into a single word.<br>
 
 
 The system uses the concept of cosine similarity to find the similarity between the movies.
