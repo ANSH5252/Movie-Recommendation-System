@@ -53,3 +53,6 @@ cosine_similarity = (A.B) / (|A| |B|) where both A and B are the vectors <br>
 The entire vectors data was passed as a parameter to the cosine_similarity class which calculates the similarity of each movie with the rest 4806 movies. Thus, the shape of the similarity becomes 4806 x 4806.<br>
 
 After calculation of the distances between movies , sorting them in reverse order and fetching the first five movies would give the top 5 movies which are similar to the movie which we currently selected. But the problem is that while sorting the movies according to their distances , the index of the movie is lost. Therefore, to retain the index , we need to use the enumerate function.<br>
+
+## Final Function for Recommendation System<br>
+The final function for recommendation system was created which takes the id of the movie as input and returns the top 5 movies which are similar to the movie which we currently selected.
