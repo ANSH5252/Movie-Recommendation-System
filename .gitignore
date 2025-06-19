@@ -9,6 +9,9 @@ __pycache__/
 # Ignore pickle files
 *.pkl
 
+# Ignore all png files
+*.png
+
 # Distribution / packaging
 .Python
 build/
