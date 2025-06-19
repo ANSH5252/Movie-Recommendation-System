@@ -131,9 +131,9 @@ recommend('Iron Man')
 ```
 
 ## 📸 Screenshots  
-![Image-1](/Image-1)
-![Image-2](/Image-2)
-![Image-3](/Image-3)  
+![Image-1](/Image-1.png)
+![Image-2](/Image-2.png)
+![Image-3](/Image-3.png)  
 
 🤝 Contributing
 Feel free to fork this repo, raise issues, or submit pull requests.
