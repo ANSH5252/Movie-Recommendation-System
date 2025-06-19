@@ -4,16 +4,23 @@ import streamlit as st
 import random
 import requests
 import time
+from dotenv import load_dotenv
+import os
+
+# Load environment variables
+load_dotenv()
 
 # Load data
 df = pickle.load(open('movie_dict.pkl', 'rb'))
 df = pd.DataFrame(df)
+
+# Load similarity matrix
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 # Fetch poster with error handling and rate limiting
 def fetch_poster(movie_id, max_retries=3):
 
-    api_key = '999e55444a851f26147d1748d91f21f6'
+    api_key = os.getenv('your_api_key')  # Replace with your TMDB API key
     url = f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36'
