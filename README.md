@@ -130,18 +130,19 @@ recommend('Iron Man')
 •  Iron Man 3
 ```
 
-## 📸 Screenshots  
-![Image-1](/Image-1.png)
-![Image-2](/Image-2.png)
-![Image-3](/Image-3.png)  
+## 📸 Screenshots 
 
-🤝 Contributing
+![Image-3](https://github.com/user-attachments/assets/bc7ac367-7e7b-451b-b829-fc34b74ba76f)
+![Image-2](https://github.com/user-attachments/assets/26ab01ba-4543-4dd9-9b5d-2d4db085b45c)
+![Image-1](https://github.com/user-attachments/assets/a3f0bed9-9e4f-4f21-9af7-2316cb2e33d6)
+
+## 🤝 Contributing  
+
 Feel free to fork this repo, raise issues, or submit pull requests.
 
 
 ## 📄 License
 This project is licensed under the MIT License.
-
 
 ## 🙋‍♂️ Author
 Anshuman Dash  
